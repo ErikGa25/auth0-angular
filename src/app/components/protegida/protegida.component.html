@@ -1,1 +1,6 @@
-<p>protegida works!</p>
+<div class="container m-5">
+    <h1>Perfil de usuario</h1>
+    <div *ngIf="auth.user$ | async as user">
+        <pre>{{ user | json }}</pre>
+    </div>
+</div>
